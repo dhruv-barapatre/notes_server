@@ -19,7 +19,7 @@ app.use("/notes",NotesRoute)
 dotenv.config()
 const PORT = process.env.PORT || 8080;
 
-app.get("/",()=>{
+app.all("*",()=>{
     res.send("This iS server of dhruv")
 })
 app.listen(PORT,()=>{
