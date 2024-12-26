@@ -17,7 +17,8 @@ app.use("/",UserRoute);
 app.use("/notes",NotesRoute)
 
 dotenv.config()
-app.listen(process.env.port  ,()=>{
+const PORT = process.env.PORT || 8080;
+app.listen(PORT,()=>{
     try {
       connection
     } catch (error) {
