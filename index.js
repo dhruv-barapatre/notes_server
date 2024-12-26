@@ -17,7 +17,7 @@ app.use("/",UserRoute);
 app.use("/notes",NotesRoute)
 
 dotenv.config()
-app.listen(process.env.port  ,()=>{
+app.listen(port  ,()=>{
     try {
       connection
         console.log("http://localhost:8080/")
