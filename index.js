@@ -9,7 +9,7 @@ const dotenv=require("dotenv");
 const cookieParser = require("cookie-parser");
 app.use(express.static("./Uploads"))
 app.use(cors({
-    origin: ["http://localhost:5173","https://notes-full-stack-front-end-dhruv.vercel.app/"],
+    origin: ["http://localhost:5173","https://notes-full-stack-front-end-dhruv.vercel.app"],
     credentials:true
 }));
 app.use(cookieParser())
